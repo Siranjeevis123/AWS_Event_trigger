@@ -13,7 +13,7 @@ aws_region="us-east-1"
 bucket_name="siran-ultimate-bucket"
 lambda_func_name="s3-lambda-function"
 role_name="s3-lambda-sns"
-email_address="siranjeevibe123@gmail.com"
+email_address="siranjeevis134@gmail.com"
 
 # Create IAM Role for the project
 role_response=$(aws iam create-role --role-name s3-lambda-sns --assume-role-policy-document '{
@@ -105,5 +105,6 @@ aws sns publish \
   --topic-arn "$topic_arn" \
   --subject "A new object created in s3 bucket" \
   --message "Hello"
+
 
 
